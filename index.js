@@ -3,9 +3,8 @@ import { addStudent, getAllStudents } from "./src/students.js";
 const app = express(); //app is now the guard
 
 //list of allowed requests
-app.get("/students", (request, response) => {
-    response.send(['Joelle', 'Mesut', 'Andy', 'John', 'Tre'])
-})// always starts with a slash. second parameter is a request and response- a function
+app.get("/students", getAllStudents) //functions don't have ()
+app.post("/student", addStudent)
 
 
 app.get("/hello", (request, response) => {
