@@ -1,4 +1,4 @@
-let students = ["Michael", "Debbie", "Tre", "Joelle", "Diego",];
+let students = ["Michael", "Debbie", "Tre", "Joelle", "Diego"];
 
 export function getAllStudents(req, res) {
     res.send(students);

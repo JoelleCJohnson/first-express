@@ -6,7 +6,7 @@ app.use(express.json())//allows us to use json file on postman
 
 //list of allowed requests
 app.get("/students", getAllStudents) //functions don't have ()
-app.post("/student", addStudent)
+app.post("/students", addStudent)
 
 //Tells api to go "guard the door"(aka port)
 app.listen(3000, () => {
